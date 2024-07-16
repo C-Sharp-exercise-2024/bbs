@@ -1,7 +1,7 @@
 ﻿@model bbs.Models.Post
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "新規投稿";  
     var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
     var userName = User.Identity.Name;
     var currentTime = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
